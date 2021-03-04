@@ -1,3 +1,4 @@
+#Lab 1
 #Zad 1
 
 zmiennastring1 = 'To zmienna łańcuchowa'

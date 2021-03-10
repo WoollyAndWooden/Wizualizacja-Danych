@@ -99,6 +99,7 @@ for i in range(1, len(lista)):
     print('Suma elementu', i, 'oraz elementu', i-1, '=', lista[i]+lista[i-1])
 
 del lista
+
 #Zad 8
 print("\nZadanie 8")
 
@@ -112,6 +113,10 @@ while i < 10:
 
 for i in lista:
     print(i)
+
+del lista
+del i
+
 #Zad 9
 print("\nZadanie 9")
 

@@ -109,5 +109,48 @@ ciag1.wyswietl_dane()
 print("Suma ciągu 2")
 ciag1.policz_sume()
 
+del ciag1
+
+del ciag2
+
 # Zad 6
 print("\nZadanie 6")
+
+class Robaczek:
+
+    def __init__(self, x, y, krok):
+        self.x = x
+        self.y = y
+        self.krok = krok
+
+    def idz_w_gore(self, ile_krokow):
+        self.y += self.krok * ile_krokow
+
+    def idz_w_dol(self, ile_krokow):
+        self.y -= self.krok * ile_krokow
+
+    def idz_w_lewo(self, ile_krokow):
+        self.x -= self.krok * ile_krokow
+
+    def idz_w_prawo(self, ile_krokow):
+        self.x += self.krok * ile_krokow
+
+    def pokaz_gdzie_jestes(self):
+        print("X:", self.x, "\nY:", self.y, sep=' ')
+
+
+Robak = Robaczek(0, 0, 15)
+
+Robak.pokaz_gdzie_jestes()
+
+Robak.idz_w_gore(5)
+
+Robak.idz_w_dol(2)
+
+Robak.idz_w_lewo(10)
+
+Robak.idz_w_prawo(3)
+
+Robak.pokaz_gdzie_jestes()
+
+del Robak

@@ -1,5 +1,6 @@
 # Importy
 import random
+
 import Lab3Funkcje
 
 # Zadanie 1
@@ -50,6 +51,12 @@ del lista2
 # Zadanie 3
 print("\nZadanie 3")
 
+listaZakupow = {"Pomidory": "kg", "Czekolada": "sztuki", "Kawa": "sztuki", "Jabłka": "kg", "Jogurty": "sztuki"}
+
+#produktyNaSztuki: List[Any] = [key for key, value in listaZakupow if value == "sztuki"]
+
+print(produktyNaSztuki)
+
 # Zadanie 4
 print("\nZadanie 4")
 
@@ -83,17 +90,21 @@ for x in range(10):
     b = random.randint(1, 20)
     h = random.randint(1, 20)
 
-    print("Trapez o podstawach", a, "i", b, "oraz wysokości", h, "ma pole", Lab3Funkcje.poleTrapezu(a, b, h), sep=' ', end='\n')
+    print("Trapez o podstawach", a, "i", b, "oraz wysokości", h, "ma pole", Lab3Funkcje.poleTrapezu(a, b, h),
+          sep=' ', end='\n')
 
 del a
 del b
 del h
 
 # Zadanie 6
-print("\nZadanie 6\nIloczyn ciągu dziesięcio elementowego o wyrazie początkowym 1 i ilorazie 4 to:",Lab3Funkcje.iloczynCiagu())
+print("\nZadanie 6\nIloczyn ciągu dziesięcio elementowego o wyrazie początkowym 1 i ilorazie 4 to:",
+      Lab3Funkcje.iloczynCiagu())
 
 # Zadanie 7
 print("\nZadanie 7")
 
 print("Iloczyn ciągu o elementach 1, 2, 4, 8 =", Lab3Funkcje.iloczynCiagu_n_Elementowego(1, 2, 4, 8))
 
+# Zadanie 8
+print("\nZadanie 8")

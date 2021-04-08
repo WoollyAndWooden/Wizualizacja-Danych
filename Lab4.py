@@ -56,6 +56,7 @@ class NaZakupy:
     def ile_kosztuje(self, wybrana_ilosc):
         print(wybrana_ilosc, self.jednostka_miary, "produktu kosztuje", self.cena_jed * wybrana_ilosc, sep=' ')
 
+
 Ziemniak = NaZakupy("ziemniak", 5, "kg", 3)
 
 Ziemniak.wyswietl_produkt()
@@ -68,6 +69,7 @@ del Ziemniak
 
 # Zad 5
 print("\nZadanie 5")
+
 
 class CiagiArytmetyczne:
     roznica = 0
@@ -95,6 +97,7 @@ class CiagiArytmetyczne:
     def policz_sume(self):
         print(str(((self.elementy_ciagu[0] + self.elementy_ciagu[len(self.elementy_ciagu) - 1]) / 2) * self.roznica))
 
+
 ciag1 = CiagiArytmetyczne()
 print("Elementy ciągu 1")
 ciag1.pobierz_elementy(5, 10, 15)
@@ -115,6 +118,7 @@ del ciag2
 
 # Zad 6
 print("\nZadanie 6")
+
 
 class Robaczek:
 
